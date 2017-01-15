@@ -1,0 +1,1109 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Bladify's custom styles
+   ========================================================================== */
+
+/*  ........................................
+    Bladify default styles
+    ........................................ */
+
+    a {
+        color: #80807f;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+/*  ........................................
+    Bladify custom classes
+    ........................................ */
+
+    .transparent-color {
+        background-color: transparent;
+    }
+
+    .border-right-btn {
+        margin-right: -3px;
+        border-radius: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 6px;
+        margin-bottom: 6px;
+        border-right-color: inherit;
+        border-right-style: solid;
+        border-right-width: 1px;
+    }
+
+    .border-right-btn:last-of-type {
+        border-right: none;
+    }
+
+    .right-text-align { text-align: right; }
+
+    .margin-zero { margin: 0 0.5em; }
+
+    .margin-top-zero { margin-top: 0; }
+
+    .font-12 { font-size: 12px; }
+
+    .display-inline-block { display: inline-block; }
+
+    .float-left { float: left; }
+
+    .float-right { float: right; }
+
+    .bladify-btn {
+        padding: 1em 2em;
+        text-transform: uppercase;
+        border: 2px solid #c69c6d;
+        color: #c69c6d;
+        display: inline-block;
+    }
+
+    .bladify-btn:hover,
+    .bladify-btn:focus {
+        background-color: #c69c6d;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .sticky-menu-shadow {
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.3) !important;
+    }
+
+    .animate-main-menu-fixed {
+        padding-bottom: 0.2em;
+        padding-top: 0.2em;
+        animation:slide-down 0.7s;
+    }
+
+    @keyframes slide-down {
+        0% {
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+
+/* --- ++++++++++ Header Start +++++++++++++++ ---*/
+
+/*  .........................................
+    Top Header
+    ......................................... */
+
+    /*-- Language and Currency --*/
+
+    #bladify-lang-cur .dropdown {
+        float: left;
+    }
+
+    #bladify-lang-cur .btn:focus {
+        outline: none;
+        outline-offset: 0;
+        box-shadow: none;
+    }
+
+    /*-- Wish list, Checkout and My Account --*/
+
+    #bladify-myaccount .btn:focus {
+        outline: none;
+        outline-offset: 0;
+        box-shadow: none;
+    }
+
+    #bladify-myaccount .btn {
+        color: #747473;
+        font-size: 12px;
+    }
+
+    /*-- Login and Register --*/
+
+    #bladify-login .btn:focus {
+        outline: none;
+        outline-offset: 0;
+        box-shadow: none;
+    }
+
+    #bladify-login .btn {
+        color: #747473;
+        font-size: 12px;
+    }
+
+/*  .........................................
+    Main menu
+    ........................................   */
+
+    #bladify-main-menu {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
+    #bladify-main-menu nav {
+        border: none;
+        box-shadow: none;
+        background-image: none;
+        background-color: #fff;
+        margin-bottom: 0;
+    }
+
+    /*-- Logo --*/
+    #bladify-main-menu .navbar-header {
+        /*width: 15%;*/
+    }
+
+    #bladify-logo img {
+        max-width: 100%;
+    }
+
+    /*-- Menu --*/
+    #bladify-menu .navbar-nav {
+        margin-top: 0.7em;
+    }
+
+    #bladify-menu .navbar-right {
+        margin-top: 0;
+    }
+
+    #bladify-menu .navbar-nav li a {
+        color: #8b8b8a;
+        box-shadow: none;
+        background-image: none;
+        background-color: initial;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        border-radius: 25px;
+    }
+
+    #bladify-menu .navbar-nav li a:hover,
+    #bladify-menu .navbar-nav li a:focus {
+        color: #fff;
+        background-color: #000;
+    }
+
+    #bladify-menu .navbar-nav li.active a {
+        color: #c69c6d;
+    }
+
+    #bladify-menu .navbar-nav li.active a:hover {
+        color: #fff;
+    }
+
+    /*-- Search --*/
+    #bladify-search-form {
+        float: left;
+        margin-top: 3%;
+    }
+
+    #bladify-search-form span input[type="text"] {
+        padding: 5px 0.5em;
+        border: none;
+        border: 1px solid #c69c6d;
+        border-right: none;
+    }
+
+    #bladify-search-form span.search-btn {
+        margin-left: -5px;
+    }
+
+    #bladify-search-form span button[type="submit"] {
+        padding: 3px 0.5em;
+        box-shadow: none;
+        border: none;
+        border: 1px solid #c69c6d;
+        border-left: none;
+        background-color: transparent;
+        color: #c69c6d;
+    }
+
+    #bladify-search-form span button[type="submit"]:hover {
+        background-color: #c69c6d;
+        color: #fff;
+    }
+
+    /*-- Cart --*/
+    #bladify-cart {
+        float: right;
+        margin-top: 1%;
+    }
+
+    #bladify-cart .btn {
+        font-size: 14px;
+        color: #c69c6d;
+    }
+
+    #bladify-cart .btn span {
+        font-size: 24px;
+    }
+
+    #bladify-cart .btn span.fa-angle-down {
+        font-size: inherit;
+    }
+
+    #bladify-cart .btn:focus {
+        outline: none;
+        outline-offset: 0;
+        box-shadow: none;
+    }
+
+    #bladify-cart .dropdown-menu li a {
+        border-radius: none;
+        -webkit-border-radius: none;
+    }
+
+/*  .........................................
+    Header slider
+    ........................................   */
+
+    #bladify-slider .flexslider {
+        margin: 0;
+        border: none;
+        height: 600px;
+        overflow: hidden;
+    }
+
+    #bladify-slider .flexslider .flex-control-nav {
+        bottom: 5%;
+        z-index: 9;
+    }
+
+    #header-slider .flex-active {
+        background-color: #c69c6d;
+
+        -ms-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+
+    #header-slider.flexslider:hover .flex-direction-nav li a {
+        opacity: 0.5;
+    }
+
+    #header-slider.flexslider:hover .flex-direction-nav li a:hover {
+        opacity: 1;
+    }
+
+    #header-slider.flexslider:hover .flex-direction-nav li a::before {
+        text-shadow: none;
+    }
+
+    .flex-active-slide .bladify-slide-details {
+        position: absolute;
+        top: 5%;
+        right: 8%;
+        width: 25%;
+        background-color: rgba(34, 34, 34, 0.4);
+        padding: 2rem;
+
+        animation-name: box_slide_in;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-delay: 1s;
+
+        -webkit-animation-name: box_slide_in;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        -webkit-animation-delay: 1s;
+    }
+
+    .flex-active-slide .bladify-slide-details h1 {
+        background-color: rgba(198, 156, 109, .7);
+        color: #fff;
+        padding: 0.5em 0.7em;
+        text-align: center;
+        margin-bottom: 1em;
+        margin-top: 0;
+        font-size: 2rem;
+
+        animation-name: opac;
+        animation-duration: 3s;
+        animation-fill-mode: both;
+        animation-delay: 1.5s;
+
+        -webkit-animation-name: opac;
+        -webkit-animation-duration: 3s;
+        -webkit-animation-fill-mode: both;
+        -webkit-animation-delay: 1.5s;
+    }
+
+    .flex-active-slide .bladify-slide-details p {
+        color: #fff;
+        font-size: 16px;
+        margin-bottom: 3rem;
+
+        animation-name: opac;
+        animation-duration: 3s;
+        animation-fill-mode: both;
+        animation-delay: 2s;
+
+        -webkit-animation-name: opac;
+        -webkit-animation-duration: 3s;
+        -webkit-animation-fill-mode: both;
+        -webkit-animation-delay: 2s;
+    }
+
+    .flex-active-slide .bladify-slide-details a {
+        animation-name: opac;
+        animation-duration: 3s;
+        animation-fill-mode: both;
+        animation-delay: 2.5s;
+
+        -webkit-animation-name: opac;
+        -webkit-animation-duration: 3s;
+        -webkit-animation-fill-mode: both;
+        -webkit-animation-delay: 2.5s;
+    }
+
+    @keyframes box_slide_in {
+        0% {
+            right: -30%;
+            background-color: rgba(34, 34, 34, 1);
+        }
+
+        50% {
+            right: 16%;
+            background-color: rgba(34, 34, 34, 0);
+        }
+
+        100% {
+            right: 8%;
+            background-color: rgba(34, 34, 34, 0.4);
+        }
+    }
+
+    @-webkit-keyframes box_slide_in {
+        0% {
+            right: -30%;
+            background-color: rgba(34, 34, 34, 1);
+        }
+
+        50% {
+            right: 16%;
+            background-color: rgba(34, 34, 34, 0);
+        }
+
+        100% {
+            right: 8%;
+            background-color: rgba(34, 34, 34, 0.4);
+        }
+    }
+
+    @keyframes opac {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+
+/* --- ++++++++++ Header End +++++++++++++++ ---*/
+
+
+/* --- ++++++++++ Content Start +++++++++++++++ ---*/
+
+
+/*  .........................................
+    Services
+    ........................................   */
+
+
+    #bladify-services {
+        margin: 2em 0;
+    }
+
+    .bladify-service span {
+        float: left;
+    }
+
+    .bladify-icon {
+        font-size: 50px;
+        color: #c69c6d;
+    }
+
+    .bladify-text {
+        margin-left: 1em;
+    }
+
+    .bladify-text h4 {
+        margin-bottom: 5px;
+        margin-top: 0.8em;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+
+    .bladify-text b {
+        font-weight: 100;
+        color: #828282;
+        text-transform: capitalize;
+    }
+
+
+/*  .........................................
+    Featured items
+    ........................................   */
+
+
+    .bladify-featured-custom-navigation {
+        margin-top: 1em;
+        display: inline-block;
+    }
+
+    .bladify-featured-custom-navigation a {
+        font-size: 30px;
+        color: #d7d7d7;
+    }
+
+    .bladify-featured-custom-navigation a:hover,
+    .bladify-featured-custom-navigation a:focus {
+        color: #c69c6d;
+    }
+
+    #featured-slider .slides li div {
+        height: 150px;
+        overflow: hidden;
+        margin-bottom: 1em;
+    }
+
+    #featured-slider .slides li p {
+        text-align: center;
+    }
+
+    #featured-slider .slides li p button {
+        text-transform: uppercase;
+        background-color: #c69c6d;
+        color: #fff;
+        border: 1px solid transparent;
+    }
+
+    #featured-slider .slides li p button:hover {
+        background-color: #fff;
+        color: #c69c6d;
+        border: 1px solid #c69c6d;
+    }
+
+    .bladify-price {
+        color: #c69c6d;
+        font-size: 16px;
+    }
+
+
+
+/*  .........................................
+    Banners
+    ........................................   */
+
+    #bladify-banners {
+        margin-bottom: 5em;
+    }
+
+/*  .........................................
+    Popular
+    ........................................   */
+
+    #bladify-popular .container {
+        position: relative;
+    }
+
+    #popular-slider .slides li div {
+        height: 150px;
+        overflow: hidden;
+        margin-bottom: 1em;
+    }
+
+    #popular-slider .slides li p {
+        text-align: center;
+    }
+
+    #popular-slider .slides li p button {
+        text-transform: uppercase;
+        background-color: #c69c6d;
+        color: #fff;
+        border: 1px solid transparent;
+    }
+
+    #popular-slider .slides li p button:hover {
+        background-color: #fff;
+        color: #c69c6d;
+        border: 1px solid #c69c6d;
+    }
+
+    .bladify-popular-custom-navigation {
+        display: block;
+        position: absolute;
+        top: -42px;
+        z-index: 1000;
+        right: 15px;
+    }
+
+    .bladify-popular-custom-navigation a {
+        font-size: 30px;
+        color: #d7d7d7;
+    }
+
+    .bladify-popular-custom-navigation a:hover,
+    .bladify-popular-custom-navigation a:focus {
+        color: #c69c6d;
+    }
+
+    #popular-slider {
+        padding-top: 2em;
+    }
+
+
+
+/*  .........................................
+    BestSeller
+    ........................................   */
+
+    #bladify-bestseller .container {
+        position: relative;
+    }
+
+    #bestseller-slider .slides li div {
+        height: 150px;
+        overflow: hidden;
+        margin-bottom: 1em;
+    }
+
+    #bestseller-slider .slides li p {
+        text-align: center;
+    }
+
+    #bestseller-slider .slides li p button {
+        text-transform: uppercase;
+        background-color: #c69c6d;
+        color: #fff;
+        border: 1px solid transparent;
+    }
+
+    #bestseller-slider .slides li p button:hover {
+        background-color: #fff;
+        color: #c69c6d;
+        border: 1px solid #c69c6d;
+    }
+
+    .bladify-bestseller-custom-navigation {
+        display: block;
+        position: absolute;
+        top: -42px;
+        z-index: 1000;
+        right: 15px;
+    }
+
+    .bladify-bestseller-custom-navigation a {
+        font-size: 30px;
+        color: #d7d7d7;
+    }
+
+    .bladify-bestseller-custom-navigation a:hover,
+    .bladify-bestseller-custom-navigation a:focus {
+        color: #c69c6d;
+    }
+
+    #bestseller-slider {
+        padding-top: 2em;
+    }
+
+/*  .........................................
+    Special
+    ........................................   */
+
+    #bladify-special .container {
+        position: relative;
+    }
+
+    #special-slider .slides li div {
+        height: 150px;
+        overflow: hidden;
+        margin-bottom: 1em;
+    }
+
+    #special-slider .slides li p {
+        text-align: center;
+    }
+
+    #special-slider .slides li p button {
+        text-transform: uppercase;
+        background-color: #c69c6d;
+        color: #fff;
+        border: 1px solid transparent;
+    }
+
+    #special-slider .slides li p button:hover {
+        background-color: #fff;
+        color: #c69c6d;
+        border: 1px solid #c69c6d;
+    }
+
+    .bladify-special-custom-navigation {
+        display: block;
+        position: absolute;
+        top: -42px;
+        z-index: 1000;
+        right: 15px;
+    }
+
+    .bladify-special-custom-navigation a {
+        font-size: 30px;
+        color: #d7d7d7;
+    }
+
+    .bladify-special-custom-navigation a:hover,
+    .bladify-special-custom-navigation a:focus {
+        color: #c69c6d;
+    }
+
+    #special-slider {
+        padding-top: 2em;
+    }
+
+/*  .........................................
+    Latest
+    ........................................   */
+
+    #bladify-latest .container {
+        position: relative;
+    }
+
+    #latest-slider .slides li div {
+        height: 150px;
+        overflow: hidden;
+        margin-bottom: 1em;
+    }
+
+    #latest-slider .slides li p {
+        text-align: center;
+    }
+
+    #latest-slider .slides li p button {
+        text-transform: uppercase;
+        background-color: #c69c6d;
+        color: #fff;
+        border: 1px solid transparent;
+    }
+
+    #latest-slider .slides li p button:hover {
+        background-color: #fff;
+        color: #c69c6d;
+        border: 1px solid #c69c6d;
+    }
+
+    .bladify-latest-custom-navigation {
+        display: block;
+        position: absolute;
+        top: -42px;
+        z-index: 1000;
+        right: 15px;
+    }
+
+    .bladify-latest-custom-navigation a {
+        font-size: 30px;
+        color: #d7d7d7;
+    }
+
+    .bladify-latest-custom-navigation a:hover,
+    .bladify-latest-custom-navigation a:focus {
+        color: #c69c6d;
+    }
+
+    #latest-slider {
+        padding-top: 2em;
+    }
+
+/*  .........................................
+    Brands
+    ........................................   */
+
+    .bladify-brands-custom-navigation a {
+        font-size: 30px;
+        color: #d7d7d7;
+        line-height: 90px;
+    }
+
+    .bladify-brands-custom-navigation a:hover,
+    .bladify-brands-custom-navigation a:focus {
+        color: #c69c6d;
+    }
+
+/* --- ++++++++++ Content End +++++++++++++++ ---*/
+
+
+/* --- ++++++++++ Footer Start +++++++++++++++ ---*/
+
+footer {
+    background-color: #252525;
+    color: #afafaf;
+    padding: 1em 0;
+}
+
+/*-- Top footer ---*/
+
+.bladify-info h3,
+#bladify-newsletter-form h3 {
+    font-size: 18px;
+    border-bottom: 1px solid;
+    padding-bottom: 0.5em;
+}
+
+.bladify-info ul {
+    padding-left: 0;
+    margin-top: 1.5em;
+}
+
+.bladify-info ul li {
+    list-style: none;
+    padding: 0.5em 0;
+}
+
+.bladify-info ul li a {
+    color: #afafaf;
+}
+
+.bladify-info ul li .baldify-contact-icon .fa {
+    font-size: 21px;
+}
+
+
+/*-- newsletter -----*/
+
+#bladify-newsletter-form h3 {
+    margin-bottom: 1.5em;
+}
+
+#bladify-newsletter #bladify-newsletter-form input[type="email"] {
+    padding: 0.6em 1em;
+    width: 100%;
+    margin-bottom: 1em;
+    color: #c69c6d;
+    font-size: 18px;
+}
+
+#bladify-newsletter #bladify-newsletter-form button {
+    background-color: #c69c6d;
+    color: #fff;
+    border: 1px solid transparent;
+}
+
+#bladify-newsletter #bladify-newsletter-form button:hover {
+    border: 1px solid #c69c6d;
+    background-color: #fff;
+    color: #c69c6d;
+}
+
+/*-- Bottom footer  --*/
+
+#bladify-footer-bottom .container {
+    border-top: 1px solid #363636;
+    padding-top: 1em;
+}
+
+#bladify-footer-bottom .payment-method {
+    margin-top: 0.3em;
+}
+
+#bladify-footer-bottom .payment-method i.fa {
+    font-size: 24px;
+}
+
+#bladify-footer-bottom .copyright {
+    margin-top: 0.5em;
+}
+
+#bladify-footer-bottom .social {
+    text-align: right;
+}
+
+#bladify-footer-bottom .social a {
+    font-size: 18px;
+    border: 2px solid #afafaf;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 33px;
+}
+
+#bladify-footer-bottom .social a:hover {
+    border-color: #c69c6d;
+    background-color: #c69c6d;
+    color: #fff;
+}
+
+/* --- ++++++++++ Footer End +++++++++++++++ ---*/
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
