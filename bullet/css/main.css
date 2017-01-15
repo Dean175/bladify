@@ -274,7 +274,7 @@ textarea {
     #bladify-menu .navbar-nav li a:hover,
     #bladify-menu .navbar-nav li a:focus {
         color: #fff;
-        background-color: #c69c6d;
+        background-color: #000;
     }
 
     #bladify-menu .navbar-nav li.active a {
