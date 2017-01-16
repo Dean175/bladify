@@ -255,6 +255,7 @@ textarea {
     /*-- Menu --*/
     #bladify-menu .navbar-nav {
         margin-top: 0.7em;
+        margin-left: 3em;
     }
 
     #bladify-menu .navbar-right {
@@ -268,7 +269,12 @@ textarea {
         background-color: initial;
         padding-top: 0.5em;
         padding-bottom: 0.5em;
-        border-radius: 25px;
+        border-radius: 5px;
+        margin: 0 0.25em;
+    }
+
+    #bladify-menu .navbar-nav li .dropdown-menu {
+        top: 60px;
     }
 
     #bladify-menu .navbar-nav li a:hover,
@@ -283,6 +289,12 @@ textarea {
 
     #bladify-menu .navbar-nav li.active a:hover {
         color: #fff;
+    }
+
+    #bladify-menu .navbar-nav li .dropdown-menu li a {
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        margin: 0;
     }
 
     /*-- Search --*/
