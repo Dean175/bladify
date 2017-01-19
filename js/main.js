@@ -97,7 +97,6 @@ $(window).load(function() {
     /*----  Sticky main menu End  -----------------*/
 
 
-
 });
 
 /*-- show the tab contents for the 2nd and up tabs ---*/
@@ -107,4 +106,16 @@ $(document).on('shown.bs.tab', 'a[data-toggle="tab"]', function(e) {
     $('#bestseller-slider').resize();
 });
 
+
+/*var windowsize = $(window).width();
+
+$(window).resize(function() {
+  var windowsize = $(window).width();
+});
+
+if (windowsize < 768) {
+  //if the window is greater than 440px wide then turn on jScrollPane..
+    alert("Less than 768px!");
+    $("#myaccount").addClass("collapse");
+}*/
 
