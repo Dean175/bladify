@@ -96,6 +96,15 @@ $(window).load(function() {
     });
     /*----  Sticky main menu End  -----------------*/
 
+    /*---- For responsive -------------------------*/
+
+    $(window).resize(function() {
+        footerResponsive('#myaccount', 768);
+        footerResponsive('#contact', 768);
+        footerResponsive('#aboutus', 768);
+        footerResponsive('#contactus', 768);
+        footerResponsive('#newsletter', 768);
+    });
 
 });
 
@@ -106,16 +115,22 @@ $(document).on('shown.bs.tab', 'a[data-toggle="tab"]', function(e) {
     $('#bestseller-slider').resize();
 });
 
+/*--- footer responsive blocks collapse ---------------*/
+function footerResponsive(id, windowWidth) {
 
-/*var windowsize = $(window).width();
+    var windowsize = $(window).width();
+    console.log(windowsize);
+    if (windowsize < windowWidth) {
+        $(id).addClass("collapse");
+        $('h3[data-target="' + id + '"]').addClass("plus collapsed").attr("data-toggle", "collapse");
+    }
+    else {
+        if ($(id).hasClass("collapse")) {
+            $(id).removeClass("collapse").removeAttr("class");
+            $('h3[data-target="' + id + '"]').removeClass("plus").removeAttr("class").removeAttr("data-toggle");
+        }
+    }
+}
 
-$(window).resize(function() {
-  var windowsize = $(window).width();
-});
 
-if (windowsize < 768) {
-  //if the window is greater than 440px wide then turn on jScrollPane..
-    alert("Less than 768px!");
-    $("#myaccount").addClass("collapse");
-}*/
 

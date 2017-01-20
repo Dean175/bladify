@@ -857,6 +857,15 @@ footer {
     padding-bottom: 0.5em;
 }
 
+.plus:after {
+    content: "\2212";
+    float: right;
+}
+
+.plus.collapsed:after {
+    content: "\002b";
+}
+
 .bladify-info ul {
     padding-left: 0;
     margin-top: 1.5em;
