@@ -623,6 +623,16 @@ textarea {
         margin-bottom: 5em;
     }
 
+
+    /* == media query == */
+    @media only screen and (max-width : 991px) {
+
+        #bladify-banners .bladify-banner {
+            text-align: center;
+            margin-bottom: 1em;
+        }
+    }
+
 /*  .........................................
     Popular
     ........................................   */
