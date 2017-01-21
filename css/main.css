@@ -388,11 +388,13 @@ textarea {
         opacity: 0.5;
     }
 
-    #header-slider.flexslider:hover .flex-direction-nav li a:hover {
+    #header-slider.flexslider:hover .flex-direction-nav li a:hover,
+    #header-slider.flexslider:focus .flex-direction-nav li a {
         opacity: 1;
     }
 
-    #header-slider.flexslider:hover .flex-direction-nav li a::before {
+    #header-slider.flexslider:hover .flex-direction-nav li a::before,
+    #header-slider.flexslider .flex-direction-nav li a::before {
         text-shadow: none;
     }
 
@@ -400,9 +402,9 @@ textarea {
         position: absolute;
         top: 5%;
         right: 8%;
-        width: 25%;
+        width: 480px;
         background-color: rgba(34, 34, 34, 0.4);
-        padding: 2rem;
+        padding: 2em;
 
         animation-name: box_slide_in;
         animation-duration: 1s;
@@ -422,7 +424,7 @@ textarea {
         text-align: center;
         margin-bottom: 1em;
         margin-top: 0;
-        font-size: 2rem;
+        font-size: 2.4em;
 
         animation-name: opac;
         animation-duration: 3s;
@@ -437,8 +439,8 @@ textarea {
 
     .flex-active-slide .bladify-slide-details p {
         color: #fff;
-        font-size: 16px;
-        margin-bottom: 3rem;
+        font-size: 1.2em;
+        margin-bottom: 3em;
 
         animation-name: opac;
         animation-duration: 3s;
@@ -504,6 +506,70 @@ textarea {
 
         100% {
             opacity: 1;
+        }
+    }
+
+
+    /* == media query == */
+    @media only screen and (max-width : 1199px) {
+
+        #bladify-slider .flexslider {
+            max-height: 500px;
+        }
+
+        .flex-active-slide .bladify-slide-details h1 {
+            font-size: 2em;
+        }
+
+        .flex-active-slide .bladify-slide-details p {
+            font-size: 1em;
+        }
+
+    }
+
+    @media only screen and (max-width : 767px) {
+
+         #bladify-slider .flexslider {
+            max-height: 350px;
+        }
+
+        .flex-active-slide .bladify-slide-details {
+           width: 350px;
+           padding: 1em;
+        }
+
+        .flex-active-slide .bladify-slide-details h1 {
+            font-size: 1.6em;
+            margin-bottom: 0.5em;
+        }
+
+        .flex-active-slide .bladify-slide-details p {
+            margin-bottom: 1em;
+        }
+    }
+
+    @media only screen and (max-width : 479px) {
+
+         #bladify-slider .flexslider {
+            max-height: 200px;
+        }
+
+        .flex-active-slide .bladify-slide-details {
+           width: 270px;
+           padding: 0.5em;
+        }
+
+        .flex-active-slide .bladify-slide-details h1 {
+            font-size: 90%;
+            margin-bottom: 0.5em;
+        }
+
+        .flex-active-slide .bladify-slide-details p {
+            font-size: 80%;
+        }
+
+        .flex-active-slide .bladify-slide-details a {
+            font-size: 65%;
         }
     }
 
