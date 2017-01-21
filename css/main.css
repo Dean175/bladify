@@ -523,17 +523,16 @@ textarea {
         margin: 2em 0;
     }
 
-    .bladify-service span {
-        float: left;
-    }
-
     .bladify-icon {
+        float: left;
+        width: 20%;
         font-size: 50px;
         color: #c69c6d;
     }
 
     .bladify-text {
-        margin-left: 1em;
+        float: right;
+        width: 70%;
     }
 
     .bladify-text h4 {
@@ -547,6 +546,22 @@ textarea {
         font-weight: 100;
         color: #828282;
         text-transform: capitalize;
+    }
+
+
+    /* == media query == */
+    @media only screen and (max-width : 1199px) {
+
+        .bladify-text {
+            width: 80%;
+        }
+    }
+
+    @media only screen and (max-width : 479px) {
+
+        .bladify-text {
+            width: 70%;
+        }
     }
 
 
@@ -842,208 +857,208 @@ textarea {
 
 /* --- ++++++++++ Footer Start +++++++++++++++ ---*/
 
-footer {
-    background-color: #252525;
-    color: #afafaf;
-    padding: 1em 0;
-}
+    footer {
+        background-color: #252525;
+        color: #afafaf;
+        padding: 1em 0;
+    }
 
-/*-- Top footer ---*/
+    /*-- Top footer ---*/
 
-.bladify-info h3,
-#bladify-newsletter-form h3 {
-    font-size: 18px;
-    border-bottom: 1px solid;
-    padding-bottom: 0.5em;
-}
+    .bladify-info h3,
+    #bladify-newsletter-form h3 {
+        font-size: 18px;
+        border-bottom: 1px solid;
+        padding-bottom: 0.5em;
+    }
 
-/*-- plus and minus icon shown on collaspe element --*/
-.plus:after {
-    content: "\2212";
-    float: right;
-}
+    /*-- plus and minus icon shown on collaspe element --*/
+    .plus:after {
+        content: "\2212";
+        float: right;
+    }
 
-.plus.collapsed:after {
-    content: "\002b";
-}
+    .plus.collapsed:after {
+        content: "\002b";
+    }
 
-.bladify-info ul {
-    padding-left: 0;
-    margin-top: 1.5em;
-}
+    .bladify-info ul {
+        padding-left: 0;
+        margin-top: 1.5em;
+    }
 
-.bladify-info ul li {
-    list-style: none;
-    padding: 0.5em 0;
-}
+    .bladify-info ul li {
+        list-style: none;
+        padding: 0.5em 0;
+    }
 
-.bladify-info ul li a {
-    color: #afafaf;
-}
+    .bladify-info ul li a {
+        color: #afafaf;
+    }
 
-.bladify-info ul li .baldify-contact-icon .fa {
-    font-size: 21px;
-}
+    .bladify-info ul li .baldify-contact-icon .fa {
+        font-size: 21px;
+    }
 
-
-.baldify-contact-icon {
-    display: block;
-    float: left;
-    width: 20%;
-}
-
-.bladify-contact-text {
-    display: block;
-    float: left;
-    width: 80%;
-}
-
-
-/* == media query == */
-@media only screen and (max-width : 1199px) {
 
     .baldify-contact-icon {
-        width: 15%;
+        display: block;
+        float: left;
+        width: 20%;
     }
 
     .bladify-contact-text {
-        width: 85%;
-    }
-}
-
-@media only screen and (max-width : 991px) {
-
-    .baldify-contact-icon {
-        width: 10%;
+        display: block;
+        float: left;
+        width: 80%;
     }
 
-    .bladify-contact-text {
-        width: 90%;
-    }
-}
 
-@media only screen and (max-width : 767px) {
+    /* == media query == */
+    @media only screen and (max-width : 1199px) {
 
-    .baldify-contact-icon {
-        width: 7%;
-    }
+        .baldify-contact-icon {
+            width: 15%;
+        }
 
-    .bladify-contact-text {
-        width: 93%;
-    }
-}
-
-@media only screen and (max-width : 479px) {
-
-    .baldify-contact-icon {
-        width: 12%;
+        .bladify-contact-text {
+            width: 85%;
+        }
     }
 
-    .bladify-contact-text {
-        width: 88%;
+    @media only screen and (max-width : 991px) {
+
+        .baldify-contact-icon {
+            width: 10%;
+        }
+
+        .bladify-contact-text {
+            width: 90%;
+        }
     }
-}
+
+    @media only screen and (max-width : 767px) {
+
+        .baldify-contact-icon {
+            width: 7%;
+        }
+
+        .bladify-contact-text {
+            width: 93%;
+        }
+    }
+
+    @media only screen and (max-width : 479px) {
+
+        .baldify-contact-icon {
+            width: 12%;
+        }
+
+        .bladify-contact-text {
+            width: 88%;
+        }
+    }
 
 
 /*-- newsletter -----*/
 
-#bladify-newsletter-form h3 {
-    margin-bottom: 1.5em;
-}
-
-#bladify-newsletter-form input[type="email"] {
-    padding: 1.2em 1em;
-    width: 100%;
-    margin-bottom: 1em;
-    color: #c69c6d;
-    font-size: 18px;
-    border-radius: 0;
-}
-
-#bladify-newsletter-form input[type="email"]:focus {
-    border-color: #c69c6d;
-    webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(198, 156, 109, .6);
-}
-
-#bladify-newsletter-form button {
-    background-color: #c69c6d;
-    color: #fff;
-    border: 1px solid transparent;
-}
-
-#bladify-newsletter-form button:hover {
-    border: 1px solid #c69c6d;
-    background-color: #fff;
-    color: #c69c6d;
-}
-
-/* == media query == */
-@media only screen and (max-width : 1199px) {
-
-    #bladify-newsletter-form input[type="email"] {
-        width: 70%;
+    #bladify-newsletter-form h3 {
+        margin-bottom: 1.5em;
     }
 
-    #newsletter {
-        margin-bottom: 2em;
-    }
-}
-
-@media only screen and (max-width : 991px) {
-
     #bladify-newsletter-form input[type="email"] {
+        padding: 1.2em 1em;
         width: 100%;
+        margin-bottom: 1em;
+        color: #c69c6d;
+        font-size: 18px;
+        border-radius: 0;
     }
-}
 
-/*-- Bottom footer  --*/
+    #bladify-newsletter-form input[type="email"]:focus {
+        border-color: #c69c6d;
+        webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(198, 156, 109, .6);
+    }
 
-#bladify-footer-bottom .container {
-    border-top: 1px solid #363636;
-    padding-top: 1em;
-}
+    #bladify-newsletter-form button {
+        background-color: #c69c6d;
+        color: #fff;
+        border: 1px solid transparent;
+    }
 
-#bladify-footer-bottom .payment-method {
-    margin-top: 0.3em;
-}
+    #bladify-newsletter-form button:hover {
+        border: 1px solid #c69c6d;
+        background-color: #fff;
+        color: #c69c6d;
+    }
 
-#bladify-footer-bottom .payment-method i.fa {
-    font-size: 24px;
-}
+    /* == media query == */
+    @media only screen and (max-width : 1199px) {
 
-#bladify-footer-bottom .copyright {
-    margin-top: 0.5em;
-}
+        #bladify-newsletter-form input[type="email"] {
+            width: 70%;
+        }
 
-#bladify-footer-bottom .social {
-    text-align: right;
-}
+        #newsletter {
+            margin-bottom: 2em;
+        }
+    }
 
-#bladify-footer-bottom .social a {
-    font-size: 18px;
-    border: 2px solid #afafaf;
-    width: 35px;
-    height: 35px;
-    display: inline-block;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 33px;
-}
+    @media only screen and (max-width : 991px) {
 
-#bladify-footer-bottom .social a:hover {
-    border-color: #c69c6d;
-    background-color: #c69c6d;
-    color: #fff;
-}
+        #bladify-newsletter-form input[type="email"] {
+            width: 100%;
+        }
+    }
 
+    /*-- Bottom footer  --*/
 
-@media only screen and (max-width : 991px) {
+    #bladify-footer-bottom .container {
+        border-top: 1px solid #363636;
+        padding-top: 1em;
+    }
+
+    #bladify-footer-bottom .payment-method {
+        margin-top: 0.3em;
+    }
+
+    #bladify-footer-bottom .payment-method i.fa {
+        font-size: 24px;
+    }
+
+    #bladify-footer-bottom .copyright {
+        margin-top: 0.5em;
+    }
 
     #bladify-footer-bottom .social {
-        text-align: left;
+        text-align: right;
     }
-}
+
+    #bladify-footer-bottom .social a {
+        font-size: 18px;
+        border: 2px solid #afafaf;
+        width: 35px;
+        height: 35px;
+        display: inline-block;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 33px;
+    }
+
+    #bladify-footer-bottom .social a:hover {
+        border-color: #c69c6d;
+        background-color: #c69c6d;
+        color: #fff;
+    }
+
+
+    @media only screen and (max-width : 991px) {
+
+        #bladify-footer-bottom .social {
+            text-align: left;
+        }
+    }
 
 
 /* --- ++++++++++ Footer End +++++++++++++++ ---*/
