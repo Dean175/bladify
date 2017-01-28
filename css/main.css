@@ -409,12 +409,12 @@ textarea {
         animation-name: box_slide_in;
         animation-duration: 1s;
         animation-fill-mode: both;
-        animation-delay: 1s;
+        animation-delay: 2s;
 
         -webkit-animation-name: box_slide_in;
         -webkit-animation-duration: 1s;
         -webkit-animation-fill-mode: both;
-        -webkit-animation-delay: 1s;
+        -webkit-animation-delay: 2s;
     }
 
     .flex-active-slide .bladify-slide-details h1 {
@@ -429,12 +429,12 @@ textarea {
         animation-name: opac;
         animation-duration: 3s;
         animation-fill-mode: both;
-        animation-delay: 1.5s;
+        animation-delay: 2.5s;
 
         -webkit-animation-name: opac;
         -webkit-animation-duration: 3s;
         -webkit-animation-fill-mode: both;
-        -webkit-animation-delay: 1.5s;
+        -webkit-animation-delay: 2.5s;
     }
 
     .flex-active-slide .bladify-slide-details p {
@@ -445,24 +445,24 @@ textarea {
         animation-name: opac;
         animation-duration: 3s;
         animation-fill-mode: both;
-        animation-delay: 2s;
+        animation-delay: 3s;
 
         -webkit-animation-name: opac;
         -webkit-animation-duration: 3s;
         -webkit-animation-fill-mode: both;
-        -webkit-animation-delay: 2s;
+        -webkit-animation-delay: 3s;
     }
 
     .flex-active-slide .bladify-slide-details a {
         animation-name: opac;
         animation-duration: 3s;
         animation-fill-mode: both;
-        animation-delay: 2.5s;
+        animation-delay: 3.5s;
 
         -webkit-animation-name: opac;
         -webkit-animation-duration: 3s;
         -webkit-animation-fill-mode: both;
-        -webkit-animation-delay: 2.5s;
+        -webkit-animation-delay: 3.5s;
     }
 
     @keyframes box_slide_in {
@@ -591,14 +591,13 @@ textarea {
 
     .bladify-icon {
         float: left;
-        width: 20%;
+        width: 30%;
         font-size: 50px;
         color: #c69c6d;
     }
 
     .bladify-text {
-        float: right;
-        width: 70%;
+        float: left;
     }
 
     .bladify-text h4 {
@@ -618,16 +617,16 @@ textarea {
     /* == media query == */
     @media only screen and (max-width : 1199px) {
 
-        .bladify-text {
+        /*.bladify-text {
             width: 80%;
-        }
+        }*/
     }
 
     @media only screen and (max-width : 479px) {
 
-        .bladify-text {
+        /*.bladify-text {
             width: 70%;
-        }
+        }*/
     }
 
 

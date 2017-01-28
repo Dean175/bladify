@@ -8,6 +8,13 @@ $(window).load(function() {
     });
 
 
+    $('#services-slider').flexslider({
+        animation: "slide",
+        animationLoop: true,
+        itemWidth: 280,
+        itemMargin: 15
+    });
+
 
     /*-- featured items slider --*/
     $('#featured-slider').flexslider({
@@ -96,15 +103,12 @@ $(window).load(function() {
     });
     /*----  Sticky main menu End  -----------------*/
 
-    /*---- For responsive -------------------------*/
-
-    $(window).resize(function() {
-        footerResponsive('#myaccount', 768);
-        footerResponsive('#contact', 768);
-        footerResponsive('#aboutus', 768);
-        footerResponsive('#contactus', 768);
-        footerResponsive('#newsletter', 768);
-    });
+    /*---- For responsive footer layout -------------------------*/
+    footerResponsive('#myaccount', 768);
+    footerResponsive('#contact', 768);
+    footerResponsive('#aboutus', 768);
+    footerResponsive('#contactus', 768);
+    footerResponsive('#newsletter', 768);
 
 });
 
@@ -119,7 +123,7 @@ $(document).on('shown.bs.tab', 'a[data-toggle="tab"]', function(e) {
 function footerResponsive(id, windowWidth) {
 
     var windowsize = $(window).width();
-    console.log(windowsize);
+    //console.log(windowsize);
     if (windowsize < windowWidth) {
         $(id).addClass("collapse");
         $('h3[data-target="' + id + '"]').addClass("plus collapsed").attr("data-toggle", "collapse");
