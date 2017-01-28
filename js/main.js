@@ -16,7 +16,9 @@ $(window).load(function() {
         animation: "slide",
         animationLoop: true,
         itemWidth: 280,
-        itemMargin: 15
+        itemMargin: 15,
+        controlNav: false,
+        directionNav: false
     });
 
 

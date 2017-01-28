@@ -384,6 +384,27 @@ textarea {
         -webkit-border-radius: none;
     }
 
+    /* == media query == */
+    @media only screen and (max-width : 767px) {
+
+        /*-- Menu --*/
+        #bladify-menu .navbar-nav {
+            margin-left: 0;
+        }
+
+        #bladify-menu .navbar-nav li a {
+            margin-right: 15px;
+            border-radius: 0;
+            -webkit-border-radius: 0;
+        }
+
+        #bladify-menu .navbar-nav li .dropdown-menu li a {
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+
+    }
+
 /*  .........................................
     Header slider
     ........................................   */
@@ -413,8 +434,7 @@ textarea {
         opacity: 0.5;
     }
 
-    #header-slider.flexslider:hover .flex-direction-nav li a:hover,
-    #header-slider.flexslider:focus .flex-direction-nav li a {
+    #header-slider.flexslider:hover .flex-direction-nav li a:hover {
         opacity: 1;
     }
 
@@ -492,12 +512,12 @@ textarea {
 
     @keyframes box_slide_in {
         0% {
-            right: -30%;
+            right: -100%;
             background-color: rgba(34, 34, 34, 1);
         }
 
         50% {
-            right: 16%;
+            right: 25%;
             background-color: rgba(34, 34, 34, 0);
         }
 
@@ -509,12 +529,12 @@ textarea {
 
     @-webkit-keyframes box_slide_in {
         0% {
-            right: -30%;
+            right: -100%;
             background-color: rgba(34, 34, 34, 1);
         }
 
         50% {
-            right: 16%;
+            right: 25%;
             background-color: rgba(34, 34, 34, 0);
         }
 
@@ -550,6 +570,28 @@ textarea {
             font-size: 1em;
         }
 
+    }
+
+    @media only screen and (max-width : 860px) {
+        #header-slider.flexslider .flex-direction-nav li a {
+            opacity: 0.9;
+        }
+
+        #header-slider.flexslider .flex-direction-nav .flex-prev {
+            left: -50px;
+        }
+
+        #header-slider.flexslider .flex-direction-nav .flex-next {
+            right: -50px;
+        }
+
+        #header-slider.flexslider:hover .flex-direction-nav .flex-prev {
+            left: 10px;
+        }
+
+        #header-slider.flexslider:hover .flex-direction-nav .flex-next {
+            right: 10px;
+        }
     }
 
     @media only screen and (max-width : 767px) {
@@ -612,6 +654,10 @@ textarea {
 
     #bladify-services {
         margin: 2em 0;
+    }
+
+    #services-slider {
+        margin-bottom: 0;
     }
 
     .bladify-icon {
