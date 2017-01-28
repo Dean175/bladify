@@ -1,6 +1,10 @@
 // Can also be used with $(document).ready()
 $(window).load(function() {
 
+    /*---  variables   ------*/
+    var stickyMenuTop = $('#bladify-main-menu').offset().top;
+    var windowsize = $(window).width();
+
     /*-- header slider --*/
     $('#header-slider').flexslider({
         animation: "fade",
@@ -85,7 +89,6 @@ $(window).load(function() {
 
 
     /*----  Sticky main menu   -----------------*/
-    var stickyMenuTop = $('#bladify-main-menu').offset().top;
 
     var stickyMenu = function(){
         var scrollTop = $(window).scrollTop();
@@ -109,6 +112,21 @@ $(window).load(function() {
     footerResponsive('#aboutus', 768);
     footerResponsive('#contactus', 768);
     footerResponsive('#newsletter', 768);
+
+    /*----  Top menu ----------------------*/
+    if (windowsize < 992) {
+        $('#bladify-top-menu .collapse-btn').addClass('display-block');
+        $('#top-header-wrapper').addClass('collapse');
+        console.log('top-menu: ' + windowsize);
+    } else {
+        if ($('#bladify-top-menu .collapse-btn').hasClass('display-block')) {
+            $('#bladify-top-menu .collapse-btn').removeClass('display-block');
+        }
+
+        if ($('#top-header-wrapper').hasClass('collapse')) {
+            $('#top-header-wrapper').removeClass('collapse');
+        }
+    }
 
 });
 

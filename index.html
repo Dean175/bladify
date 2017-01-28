@@ -39,43 +39,50 @@
             <section id="bladify-top-menu">
                 <div class="container">
                     <div class="row">
-                        <!-- Language and Currency  -->
-                        <article id="bladify-lang-cur" class="col-sm-12 col-md-5">
-                            <div class="dropdown">
-                              <button class="btn transparent-color font-12 dropdown-toggle" type="button" data-toggle="dropdown">Language
-                              <span class="fa fa-angle-down" aria-hidden="true"></span></button>
-                              <ul class="dropdown-menu">
-                                <li><a href="#">English</a></li>
-                                <li><a href="#">French</a></li>
-                              </ul>
-                            </div>
+                        <div class="collapse-btn">
+                            <button data-toggle="collapse" data-target="#top-header-wrapper" class="btn">
+                                <span class="fa fa-plus" aria-hidden="true"></span>
+                            </button>
+                        </div>
 
-                            <div class="dropdown">
-                              <button class="btn transparent-color font-12 dropdown-toggle" type="button" data-toggle="dropdown">Currency
-                              <span class="fa fa-angle-down" aria-hidden="true"></span></button>
-                              <ul class="dropdown-menu">
-                                <li><a href="#">USD</a></li>
-                                <li><a href="#">MRU</a></li>
-                              </ul>
-                            </div>
-                        </article>
-                        <!-- Language and Currency end -->
+                        <div id="top-header-wrapper">
+                            <!-- Language and Currency  -->
+                            <article id="bladify-lang-cur" class="col-sm-12 col-md-5 clearfix">
+                                <div class="dropdown">
+                                  <button class="btn transparent-color font-12 dropdown-toggle" type="button" data-toggle="dropdown">Language
+                                  <span class="fa fa-angle-down" aria-hidden="true"></span></button>
+                                  <ul class="dropdown-menu">
+                                    <li><a href="#">English</a></li>
+                                    <li><a href="#">French</a></li>
+                                  </ul>
+                                </div>
 
-                        <!-- Wish list, Checkout and My Account -->
-                        <article id="bladify-myaccount" class="col-sm-12 col-md-5 right-text-align">
-                            <a href="#" class="btn border-right-btn">Wish List (0)</a>
-                            <a href="#" class="btn border-right-btn">Checkout</a>
-                            <a href="#" class="btn border-right-btn">My Account</a>
-                        </article>
-                        <!-- Wish list, Checkout and My Account end -->
+                                <div class="dropdown">
+                                  <button class="btn transparent-color font-12 dropdown-toggle" type="button" data-toggle="dropdown">Currency
+                                  <span class="fa fa-angle-down" aria-hidden="true"></span></button>
+                                  <ul class="dropdown-menu">
+                                    <li><a href="#">USD</a></li>
+                                    <li><a href="#">MRU</a></li>
+                                  </ul>
+                                </div>
+                            </article>
+                            <!-- Language and Currency end -->
 
-                        <!-- Login and Register -->
-                        <article id="bladify-login" class="col-sm-12 col-md-2 right-text-align">
-                            <a href="#" class="btn border-right-btn">Login</a>
-                            <a href="#" class="btn border-right-btn">Register</a>
-                        </article>
-                        <!-- Login and Register end -->
+                            <!-- Wish list, Checkout and My Account -->
+                            <article id="bladify-myaccount" class="col-sm-12 col-md-5 right-text-align">
+                                <a href="#" class="btn border-right-btn">Wish List (0)</a>
+                                <a href="#" class="btn border-right-btn">Checkout</a>
+                                <a href="#" class="btn border-right-btn">My Account</a>
+                            </article>
+                            <!-- Wish list, Checkout and My Account end -->
 
+                            <!-- Login and Register -->
+                            <article id="bladify-login" class="col-sm-12 col-md-2 right-text-align">
+                                <a href="#" class="btn border-right-btn">Login</a>
+                                <a href="#" class="btn border-right-btn">Register</a>
+                            </article>
+                            <!-- Login and Register end -->
+                        </div><!-- .top-header-wrapper -->
                     </div><!-- row -->
                     <hr class="margin-zero" />
                 </div><!-- container -->
