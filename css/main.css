@@ -477,7 +477,7 @@ textarea {
     }
 
     .bladify-slide-details h1 {
-        color: #c69c6d;
+        color: red/*#c69c6d*/;
         text-align: center;
         margin-top: 0;
         font-size: 40px;
