@@ -96,6 +96,141 @@ textarea {
    ========================================================================== */
 
 /*  ........................................
+    Bladify fonts
+    ........................................ */
+
+    @font-face {
+      font-family: 'OpenSansLight-Italic';
+      src: url('../fonts/OpenSansLight-Italic.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/OpenSansLight-Italic.woff') format('woff'),
+           url('../fonts/OpenSansLight-Italic.ttf')  format('truetype'),
+           url('../fonts/OpenSansLight-Italic.svg#OpenSansLight-Italic') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'OpenSans';
+      src: url('../fonts/OpenSans.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/OpenSans.woff') format('woff'),
+           url('../fonts/OpenSans.ttf')  format('truetype'),
+           url('../fonts/OpenSans.svg#OpenSans') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'OpenSans-Light';
+      src: url('../fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/OpenSans-Light.woff') format('woff'),
+           url('../fonts/OpenSans-Light.ttf')  format('truetype'),
+           url('../fonts/OpenSans-Light.svg#OpenSans-Light') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'OpenSans-Semibold';
+      src: url('../fonts/OpenSans-Semibold.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/OpenSans-Semibold.woff') format('woff'),
+           url('../fonts/OpenSans-Semibold.ttf')  format('truetype'),
+           url('../fonts/OpenSans-Semibold.svg#OpenSans-Semibold') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Lato-Light';
+      src: url('../fonts/Lato-Light.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/Lato-Light.woff') format('woff'),
+           url('../fonts/Lato-Light.ttf')  format('truetype'),
+           url('../fonts/Lato-Light.svg#Lato-Light') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'JosefinSans';
+      src: url('../fonts/JosefinSans.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/JosefinSans.woff') format('woff'),
+           url('../fonts/JosefinSans.ttf')  format('truetype'),
+           url('../fonts/JosefinSans.svg#JosefinSans') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'JosefinSans-SemiBold';
+      src: url('../fonts/JosefinSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/JosefinSans-SemiBold.woff') format('woff'),
+           url('../fonts/JosefinSans-SemiBold.ttf')  format('truetype'),
+           url('../fonts/JosefinSans-SemiBold.svg#JosefinSans-SemiBold') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Catamaran-ExtraBold';
+      src: url('../fonts/Catamaran-ExtraBold.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/Catamaran-ExtraBold.woff') format('woff'),
+           url('../fonts/Catamaran-ExtraBold.ttf')  format('truetype'),
+           url('../fonts/Catamaran-ExtraBold.svg#Catamaran-ExtraBold') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Catamaran-ExtraLight';
+      src: url('../fonts/Catamaran-ExtraLight.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/Catamaran-ExtraLight.woff') format('woff'),
+           url('../fonts/Catamaran-ExtraLight.ttf')  format('truetype'),
+           url('../fonts/Catamaran-ExtraLight.svg#Catamaran-ExtraLight') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Montserrat-Bold';
+      src: url('../fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/Montserrat-Bold.woff') format('woff'),
+           url('../fonts/Montserrat-Bold.ttf')  format('truetype'),
+           url('../fonts/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Oswald-Light';
+      src: url('../fonts/Oswald-Light.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/Oswald-Light.woff') format('woff'),
+           url('../fonts/Oswald-Light.ttf')  format('truetype'),
+           url('../fonts/Oswald-Light.svg#Oswald-Light') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Oswald-Regular';
+      src: url('../fonts/Oswald-Regular.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/Oswald-Regular.woff') format('woff'),
+           url('../fonts/Oswald-Regular.ttf')  format('truetype'),
+           url('../fonts/Oswald-Regular.svg#Oswald-Regular') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Ubuntu';
+      src: url('../fonts/Ubuntu.eot?#iefix') format('embedded-opentype'), 
+           url('../fonts/Ubuntu.woff') format('woff'),
+           url('../fonts/Ubuntu.ttf')  format('truetype'),
+           url('../fonts/Ubuntu.svg#Ubuntu') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+
+/*  ........................................
     Bladify default styles
     ........................................ */
 
@@ -134,7 +269,7 @@ textarea {
 
     .margin-top-zero { margin-top: 0; }
 
-    .font-12 { font-size: 12px; }
+    .font-12 { font-size: 12px; line-height: 16px; }
 
     .display-inline-block { display: inline-block; }
     .display-block { display: block !important; }
@@ -189,6 +324,10 @@ textarea {
     Top Header
     ......................................... */
 
+    #bladify-top-menu {
+        font-family: 'OpenSansLight-Italic';
+    }
+
     #bladify-top-menu .collapse-btn {
         text-align: right;
         padding: 5px 16px 5px 0;
@@ -210,6 +349,10 @@ textarea {
         float: left;
     }
 
+    #bladify-lang-cur .btn, #bladify-lang-cur .dropdown-menu li a {
+        color: #666665;
+    }
+
     #bladify-lang-cur .btn:focus {
         outline: none;
         outline-offset: 0;
@@ -225,8 +368,9 @@ textarea {
     }
 
     #bladify-myaccount .btn {
-        color: #747473;
+        color: #666665;
         font-size: 12px;
+        line-height: 16px;
     }
 
     /*-- Login and Register --*/
@@ -238,8 +382,9 @@ textarea {
     }
 
     #bladify-login .btn {
-        color: #747473;
+        color: #666665;
         font-size: 12px;
+        line-height: 16px;
     }
 
 
@@ -288,6 +433,9 @@ textarea {
     }
 
     #bladify-menu .navbar-nav li a {
+        font-family: 'OpenSans';
+        font-size: 14px;
+        line-height: 14px;
         color: #8b8b8a;
         box-shadow: none;
         background-image: none;
@@ -361,16 +509,21 @@ textarea {
     }
 
     #bladify-cart .btn {
+        font-family: 'OpenSans';
         font-size: 14px;
-        color: #c69c6d;
+        line-height: 14px;
+        color: #a2a2a1;
     }
 
     #bladify-cart .btn span {
         font-size: 24px;
+        line-height: 24px;
+        color: #c69c6d;
     }
 
     #bladify-cart .btn span.fa-angle-down {
         font-size: inherit;
+        color: inherit;
     }
 
     #bladify-cart .btn:focus {
@@ -477,12 +630,12 @@ textarea {
     }
 
     .bladify-slide-details h1 {
+        font-family: 'OpenSans-Semibold';
         color: #c69c6d;
         text-align: center;
         margin-top: 0;
         font-size: 40px;
         line-height: 40px;
-        font-weight: bold;
 
         animation-name: opac;
         animation-duration: 3s;
@@ -496,10 +649,12 @@ textarea {
     }
 
     .bladify-slide-details p {
+        font-family: 'Lato-Light';
         color: #fff;
         font-size: 20px;
         line-height: 28px;
         text-align: center;
+        word-spacing: 3px;
 
         animation-name: opac;
         animation-duration: 3s;
@@ -515,6 +670,13 @@ textarea {
         text-align: center;
         margin-top: 40px;
     }
+
+    .bladify-slide-details .bladify-sd-btn .bladify-btn {
+        font-family: 'Oswald-Light';
+        font-size: 20px;
+        line-height: 38px;
+    }
+
     .bladify-slide-details a {
         animation-name: opac;
         animation-duration: 3s;
@@ -679,8 +841,8 @@ textarea {
 
     .bladify-icon {
         float: left;
-        width: 30%;
-        font-size: 50px;
+        width: 20%;
+        font-size: 43px;
         color: #c69c6d;
     }
 
@@ -692,13 +854,19 @@ textarea {
         margin-bottom: 5px;
         margin-top: 0.8em;
         text-transform: uppercase;
-        font-size: 16px;
+        font-size: 20px;
+        line-height: 20px;
+        font-family: 'OpenSans-Semibold';
+        color: #333;
     }
 
     .bladify-text b {
-        font-weight: 100;
+        font-family: 'JosefinSans';
+        font-size: 18px;
+        line-height: 18px;
         color: #828282;
         text-transform: capitalize;
+        font-weight: normal;
     }
 
 
@@ -722,6 +890,12 @@ textarea {
     Featured items
     ........................................   */
 
+    #bladify-featured-items h3 {
+        font-family: 'Ubuntu';
+        font-size: 24px;
+        line-height: 24px;
+        color: #545454;
+    }
 
     .bladify-featured-custom-navigation {
         margin-top: 1em;
@@ -746,6 +920,9 @@ textarea {
 
     #featured-slider .slides li p {
         text-align: center;
+        font-family: 'JosefinSans-SemiBold';
+        font-size: 14px;
+        line-height: 14px;
     }
 
     #featured-slider .slides li p button {
@@ -753,6 +930,9 @@ textarea {
         background-color: #c69c6d;
         color: #fff;
         border: 1px solid transparent;
+        font-family: 'Oswald-Regular';
+        font-size: 12px;
+        line-height: 12px;
     }
 
     #featured-slider .slides li p button:hover {
@@ -763,7 +943,9 @@ textarea {
 
     .bladify-price {
         color: #c69c6d;
-        font-size: 16px;
+        font-size: 14px;
+        line-height: 14px;
+        font-family: 'Montserrat-Bold';
     }
 
 
