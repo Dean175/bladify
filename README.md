@@ -1,2 +1,2 @@
-# bullet
-Bullet HTML template design
+# Bladify
+Bladify HTML ecommerce template design
