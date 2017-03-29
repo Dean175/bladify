@@ -242,6 +242,17 @@ textarea {
         max-width: 100%;
     }
 
+    .nav-tabs li a {
+        font-family: 'Ubuntu';
+        font-size: 18px;
+        line-height: 18px;
+        color: #545454;
+    }
+
+    .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus {
+        color: #c69c6d;
+    }
+
 /*  ........................................
     Bladify custom classes
     ........................................ */
@@ -918,14 +929,14 @@ textarea {
         margin-bottom: 1em;
     }
 
-    #featured-slider .slides li p {
+    .slides.products li p {
         text-align: center;
         font-family: 'JosefinSans-SemiBold';
         font-size: 14px;
         line-height: 14px;
     }
 
-    #featured-slider .slides li p button {
+    .slides.products li p button {
         text-transform: uppercase;
         background-color: #c69c6d;
         color: #fff;
@@ -935,7 +946,7 @@ textarea {
         line-height: 12px;
     }
 
-    #featured-slider .slides li p button:hover {
+    .slides.products li p button:hover {
         background-color: #fff;
         color: #c69c6d;
         border: 1px solid #c69c6d;
@@ -943,9 +954,9 @@ textarea {
 
     .bladify-price {
         color: #c69c6d;
-        font-size: 14px;
-        line-height: 14px;
-        font-family: 'Montserrat-Bold';
+        font-size: 20px;
+        line-height: 20px;
+        font-family: 'JosefinSans-SemiBold';
     }
 
 
@@ -982,23 +993,7 @@ textarea {
         margin-bottom: 1em;
     }
 
-    #popular-slider .slides li p {
-        text-align: center;
-    }
-
-    #popular-slider .slides li p button {
-        text-transform: uppercase;
-        background-color: #c69c6d;
-        color: #fff;
-        border: 1px solid transparent;
-    }
-
-    #popular-slider .slides li p button:hover {
-        background-color: #fff;
-        color: #c69c6d;
-        border: 1px solid #c69c6d;
-    }
-
+    
     .bladify-popular-custom-navigation {
         display: block;
         position: absolute;
@@ -1036,24 +1031,7 @@ textarea {
         overflow: hidden;
         margin-bottom: 1em;
     }
-
-    #bestseller-slider .slides li p {
-        text-align: center;
-    }
-
-    #bestseller-slider .slides li p button {
-        text-transform: uppercase;
-        background-color: #c69c6d;
-        color: #fff;
-        border: 1px solid transparent;
-    }
-
-    #bestseller-slider .slides li p button:hover {
-        background-color: #fff;
-        color: #c69c6d;
-        border: 1px solid #c69c6d;
-    }
-
+    
     .bladify-bestseller-custom-navigation {
         display: block;
         position: absolute;
@@ -1090,23 +1068,6 @@ textarea {
         margin-bottom: 1em;
     }
 
-    #special-slider .slides li p {
-        text-align: center;
-    }
-
-    #special-slider .slides li p button {
-        text-transform: uppercase;
-        background-color: #c69c6d;
-        color: #fff;
-        border: 1px solid transparent;
-    }
-
-    #special-slider .slides li p button:hover {
-        background-color: #fff;
-        color: #c69c6d;
-        border: 1px solid #c69c6d;
-    }
-
     .bladify-special-custom-navigation {
         display: block;
         position: absolute;
@@ -1141,23 +1102,6 @@ textarea {
         height: 150px;
         overflow: hidden;
         margin-bottom: 1em;
-    }
-
-    #latest-slider .slides li p {
-        text-align: center;
-    }
-
-    #latest-slider .slides li p button {
-        text-transform: uppercase;
-        background-color: #c69c6d;
-        color: #fff;
-        border: 1px solid transparent;
-    }
-
-    #latest-slider .slides li p button:hover {
-        background-color: #fff;
-        color: #c69c6d;
-        border: 1px solid #c69c6d;
     }
 
     .bladify-latest-custom-navigation {
@@ -1204,17 +1148,20 @@ textarea {
 
     footer {
         background-color: #252525;
-        color: #afafaf;
         padding: 1em 0;
+        color: #dcdcdc;
     }
 
     /*-- Top footer ---*/
 
     .bladify-info h3,
     #bladify-newsletter-form h3 {
+        font-family: 'Catamaran-ExtraBold';
         font-size: 18px;
+        line-height: 18px;
         border-bottom: 1px solid;
         padding-bottom: 0.5em;
+        color: #fff;
     }
 
     /*-- plus and minus icon shown on collaspe element --*/
@@ -1237,10 +1184,6 @@ textarea {
         padding: 0.5em 0;
     }
 
-    .bladify-info ul li a {
-        color: #afafaf;
-    }
-
     .bladify-info ul li .baldify-contact-icon .fa {
         font-size: 21px;
     }
@@ -1256,6 +1199,17 @@ textarea {
         display: block;
         float: left;
         width: 80%;
+    }
+
+    /*--global footer color --*/
+    .baldify-contact-icon,
+    .bladify-contact-text,
+    .bladify-info ul li a,
+    #bladify-newsletter-form p {
+        color: #dcdcdc;
+        font-family: 'Catamaran-ExtraLight';
+        font-size: 16px;
+        line-height: 16px;
     }
 
 
@@ -1374,6 +1328,9 @@ textarea {
 
     #bladify-footer-bottom .copyright {
         margin-top: 0.5em;
+        font-family: 'Catamaran-ExtraLight';
+        font-size: 14px;
+        line-height: 14px;
     }
 
     #bladify-footer-bottom .social {
