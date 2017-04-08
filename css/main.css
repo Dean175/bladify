@@ -624,12 +624,13 @@ textarea {
     
     .bladify-slide-details {
         position: absolute;
-        top: 10%;
+        top: 0;
+        bottom: 0;
         right: 8%;
-        width: 468px;
+        width: 400px;
         min-height: 267px;
-        background-color: rgba(37, 37, 37, 0.6);
-        padding: 28px;
+        background-color: rgba(37, 37, 37, 0.85);
+        padding: 24px;
 
         animation-name: box_slide_in;
         animation-duration: 1s;
